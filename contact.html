@@ -15,56 +15,96 @@
     <!-- STYLESHEETS -->
     <link rel="stylesheet" media="all" href="css/main.css" />
     <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <section class="content">
-        <div class="content__wrapper">
-            <div class="content__header">
-                <div class="content__title">
-                    <h1>Contact</h1>
-                </div>
+    
+    <div class="wrapper">
 
-            </div>
-            <div class="content__body">
-                <div class="content__map__wide">
-                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCA3SPeAuX5PXYSc0ftXdS5MOPIvbHsmWE&q=Artevelde+Mariakerke+Hogeschool"
-                        allowfullscreen> </iframe>
+        <input data-function="swipe" id="swipe" type="checkbox">
+        <label data-function="swipe" for="swipe" class="">&#xf0c9;</label>
+
+        <section class="content">
+        <div class="content__wrapper">
+            <div class="grid__wrapper">
+                <div class="grid__container">
+                    <div class="grid__row">
+                        <div class="grid__column-12">
+                            <div class="grid__title">
+                                <h1>Contact</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__column-12">
+                            <div>
+                                <div id="grid__map">
+                                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCA3SPeAuX5PXYSc0ftXdS5MOPIvbHsmWE&q=Artevelde+Mariakerke+Hogeschool"
+                                        allowfullscreen> </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__column-12">
+                            <div class="grid__body__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__column-12">
+                            <div class="grid__title">
+                                <h1>Let's talk</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__column-12">
+                            <div>
+                                <div class="form__container">
+                                    <form id="contact" action="" method="post">
+                                        <fieldset>
+                                            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                                        </fieldset>
+                                        <fieldset>
+                                            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                                        </fieldset>
+                                        <fieldset>
+                                            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                                        </fieldset>
+                                        <fieldset>
+                                            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                                        </fieldset>
+                                        <fieldset>
+                                            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="content__text content__solo">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                    laborum.
-                </div>
-            </div>
-            <div class="content__header">
-                <div class="content__title">
-                    <h1>Let's talk.</h1>
-                </div>
-            </div>
-            <div class="form__container">
-                <form id="contact" action="" method="post">
-                    <fieldset>
-                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-                    </fieldset>
-                    <fieldset>
-                        <input placeholder="Your Email Address" type="email" tabindex="2" required>
-                    </fieldset>
-                    <fieldset>
-                        <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-                    </fieldset>
-                    <fieldset>
-                        <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-                    </fieldset>
-                    <fieldset>
-                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                    </fieldset>
-                </form>
             </div>
         </div>
     </section>
+
+        <div class="sidebar">
+            <nav class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">What we do</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">Who we are</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </nav>
+        </div>
+
+    </div>
 
 </body>
 
